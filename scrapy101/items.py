@@ -4,7 +4,12 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy import Field
 
+class QuoteItem(scrapy.Item):
+    author = Field()
+    text = Field()
+    author_link = Field()
 
 class Scrapy101Item(scrapy.Item):
     # define the fields for your item here like:
